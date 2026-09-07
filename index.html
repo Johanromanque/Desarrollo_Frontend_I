@@ -1,119 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SamoaGames - Tienda de Videojuegos</title>
-    <link
-      rel="stylesheet" href="Johan_Romanque_PFY2201_CSS_Semana3.css"/>
-  </head>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #DDD9D9;
+        }
+    </style>
+</head>
 
-  <body>
+<body>
+    <!-- Barra de navegación -->
     <header id="inicio">
-      <h1>SamoaGames</h1>
-
-      <img
-        class="logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToA_sB6cN4rX9t2gt2TuOYCtRdY-mRzvt-0mVp7Stkzg&s"
-        alt="Logo de SamoaGames"
-      />
-
-      <p class="descripcion">
-        Bienvenido a nuestra tienda de videojuegos. Encuentra los mejores
-        títulos y ofertas aquí.
-      </p>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">
+                    SamoaGames
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#juegos">
+                                Juegos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ofertas">
+                                Ofertas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="menu">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#juegos">Juegos</a></li>
-        <li><a href="#ofertas">Ofertas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section id="juegos" class="seccion">
-        <h2>Productos Destacados</h2>
+        <!-- Presentación -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">
+                            SamoaGames
+                        </h1>
+                        <p class="lead text-body-secondary">
+                            Bienvenido a nuestra tienda de videojuegos.
+                            Encuentra los mejores títulos y ofertas aquí.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <ul class="lista-productos">
-          <li class="producto">
-            <h3>Diablo 4</h3>
+        <!-- Carrusel -->
+        <section class="container mb-5">
+            <div id="carouselJuegos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Diablo 4 -->
+                    <div class="carousel-item active">
+                        <img src="imagenes/diablo4-carrusel.jpg" class="d-block w-100" alt="Diablo 4">
+                    </div>
+                    <!-- Helldivers 2 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/helldivers2-carrusel.jpg" class="d-block w-100" alt="Helldivers 2">
+                    </div>
+                    <!-- Hollow Knight Silksong -->
+                    <div class="carousel-item">
+                        <img src="imagenes/silksong-carrusel.jpg" class="d-block w-100" alt="Hollow Knight Silksong">
+                    </div>
+                </div>
 
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjoO3_MfxuMQMU-MNuv3krRvZLE66t8KKkPjliNgan8jzT6rUywAVyEoB&s=10"
-              alt="Diablo 4"
-            />
+                <!-- Botón anterior -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJuegos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                    </span>
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+                </button>
 
-            <p>
-              Sumérgete en el mundo de los demonios con esta épica aventura de
-              acción y rol.
-            </p>
-          </li>
+                <!-- Botón siguiente -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselJuegos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                    </span>
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+                </button>
+            </div>
+        </section>
 
-          <li class="producto">
-            <h3>Helldivers 2</h3>
+        <!-- Productos destacados -->
+        <section id="juegos" class="container my-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">
+                    Productos Destacados
+                </h2>
+                <p class="text-muted">
+                    Descubre algunos de nuestros videojuegos destacados.
+                </p>
+            </div>
 
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_THL4FiUisTMKETJf1G_YLRpaQ0dVuYFCYNDDlu1415fcB7hwKsozW4&s=10"
-              alt="Helldivers 2"
-            />
+            <!-- Grid Bootstrap -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Diablo 4 -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/diablo4.jpg" class="card-img-top" alt="Diablo 4">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Diablo 4
+                            </h5>
+                            <p class="card-text">
+                                Sumérgete en el mundo de los demonios
+                                con esta épica aventura de acción y rol.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Ver juego
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-            <p>
-              Combate en masa con amigos en esta experiencia de acción en
-              tiempo real.
-            </p>
-          </li>
+                <!-- Helldivers 2 -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/helldivers2.jpg" class="card-img-top" alt="Helldivers 2">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Helldivers 2
+                            </h5>
+                            <p class="card-text">
+                                Combate en masa con amigos en esta
+                                experiencia de acción en tiempo real.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Ver juego
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-          <li class="producto">
-            <h3>Hollow Knight: Silksong</h3>
+                <!-- Hollow Knight Silksong -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/silksong.jpg" class="card-img-top" alt="Hollow Knight Silksong">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Hollow Knight: Silksong
+                            </h5>
+                            <p class="card-text">
+                                Explora un mundo lleno de misterios
+                                y desafíos en esta aventura de plataformas.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Ver juego
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <img
-              src="https://media.vandal.net/i/640x360/9-2025/20259151725972_1.jpg"
-              alt="Hollow Knight: Silksong"
-            />
+        <!-- Ofertas y Contacto -->
+        <section class="container my-5">
+            <div class="row g-4">
+                <!-- Ofertas -->
+                <div class="col-12 col-lg-6">
+                    <section id="ofertas" class="bg-light rounded p-4 text-center h-100 shadow-sm">
+                        <h2 class="fw-bold">
+                            Ofertas
+                        </h2>
+                        <p class="mb-0">
+                            Descubre nuestras promociones y descuentos
+                            en videojuegos seleccionados.
+                        </p>
+                    </section>
+                </div>
 
-            <p>
-              Explora un mundo subterráneo lleno de misterios y desafíos en
-              esta secuela del aclamado juego de plataformas.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="ofertas" class="seccion">
-        <h2>Ofertas</h2>
-
-        <p>
-          Descubre nuestras promociones y descuentos en videojuegos
-          seleccionados.
-        </p>
-      </section>
-
-      <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-
-        <p>
-          Si necesitas información sobre nuestros productos, puedes escribirnos
-          a:
-        </p>
-
-        <p>
-          <a href="mailto:contacto@samoagames.cl">
-            contacto@samoagames.cl
-          </a>
-        </p>
-
-        <p>
-          Visita nuestro sitio recomendado:
-          <a href="https://store.steampowered.com/">Steam</a>
-        </p>
-      </section>
+                <!-- Contacto -->
+                <div class="col-12 col-lg-6">
+                    <section id="contacto" class="bg-light rounded p-4 text-center h-100 shadow-sm">
+                        <h2 class="fw-bold">
+                            Contacto
+                        </h2>
+                        <p>
+                            Si necesitas información sobre nuestros productos,
+                            puedes escribirnos a:
+                        </p>
+                        <p class="mb-0">
+                            <a href="mailto:contacto@samoagames.cl">
+                                contacto@samoagames.cl
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 SamoaGames. Todos los derechos reservados.</p>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">
+                &copy; 2026 SamoaGames. Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
-  </body>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+</body>
 </html>
