@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "titulo": "Diablo IV",
+        "genero": "RPG de acción",
+        "descripcion": "Explora el oscuro mundo de Santuario y enfréntate a poderosos enemigos.",
+        "imagen": "imagenes/diablo4.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Helldivers 2",
+        "genero": "Acción cooperativa",
+        "descripcion": "Únete a otros jugadores y lucha por defender la Supertierra.",
+        "imagen": "imagenes/helldivers2.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Hollow Knight: Silksong",
+        "genero": "Metroidvania",
+        "descripcion": "Explora un nuevo reino lleno de enemigos, secretos y desafíos.",
+        "imagen": "imagenes/silksong.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Hades",
+        "genero": "Roguelike",
+        "descripcion": "Escapa del inframundo utilizando distintas armas y poderes de los dioses.",
+        "imagen": "imagenes/hades.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Cyberpunk 2077",
+        "genero": "RPG",
+        "descripcion": "Descubre Night City en una aventura futurista llena de decisiones.",
+        "imagen": "imagenes/cyberpunk2077.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "Minecraft",
+        "genero": "Aventura y construcción",
+        "descripcion": "Explora, construye y crea mundos utilizando bloques y tu imaginación.",
+        "imagen": "imagenes/minecraft.jpg"
+    }
+]

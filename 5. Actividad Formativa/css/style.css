@@ -1,0 +1,10 @@
+/* Suaviza los cambios visuales de las tarjetas */
+.card {
+    transition: transform 0.3s ease;
+}
+
+
+/* Efecto visual al pasar el mouse */
+.card:hover {
+    transform: translateY(-5px);
+}
