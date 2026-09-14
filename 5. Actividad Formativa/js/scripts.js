@@ -67,6 +67,8 @@ function mostrarJuegos(juegos) {
             </article>
         `;
   });
+
+  configurarEventosTarjetas();
 }
 
 // Configura los eventos de interacción de la página.
@@ -80,25 +82,33 @@ function configurarEventos() {
   // Cambia el mensaje cuando el usuario pasa el mouse sobre "Juegos".
   menuJuegos.addEventListener("mouseover", function () {
     mensajePrincipal.innerHTML =
-      "Explora nuestro catálogo y descubre nuevos videojuegos.";
+      "<strong>Explora nuestro catálogo y descubre nuevos videojuegos.</strong>";
+
+    mensajePrincipal.classList.add("text-primary");
   });
 
   // Restaura el mensaje cuando el mouse sale de "Juegos".
   menuJuegos.addEventListener("mouseout", function () {
     mensajePrincipal.innerHTML =
       "Descubre videojuegos, novedades y grandes aventuras.";
+
+    mensajePrincipal.classList.remove("text-primary");
   });
 
   // Cambia el mensaje cuando el usuario pasa el mouse sobre "Ofertas".
   menuOfertas.addEventListener("mouseover", function () {
     mensajePrincipal.innerHTML =
-      "Revisa nuestras promociones y encuentra tu próxima aventura.";
+      "<strong>Revisa nuestras promociones y encuentra tu próxima aventura.</strong>";
+
+    mensajePrincipal.classList.add("text-primary");
   });
 
   // Restaura el mensaje al retirar el mouse de "Ofertas".
   menuOfertas.addEventListener("mouseout", function () {
     mensajePrincipal.innerHTML =
       "Descubre videojuegos, novedades y grandes aventuras.";
+
+    mensajePrincipal.classList.remove("text-primary");
   });
 
   // Muestra contenido dinámico al presionar el botón de ofertas.
@@ -117,6 +127,28 @@ function configurarEventos() {
 
     seccionOfertas.scrollIntoView({
       behavior: "smooth",
+    });
+  });
+}
+
+// Configura eventos mouseover y mouseout en las tarjetas.
+// Configura eventos mouseover y mouseout en las tarjetas.
+function configurarEventosTarjetas() {
+  const tarjetas = document.querySelectorAll(".card");
+
+  tarjetas.forEach(function (tarjeta) {
+    const titulo = tarjeta.querySelector(".card-title").textContent.trim();
+    const descripcion = tarjeta.querySelector(".card-text");
+    const textoOriginal = descripcion.innerHTML;
+
+    // Cambia el texto de la tarjeta al pasar el mouse.
+    tarjeta.addEventListener("mouseover", function () {
+      descripcion.innerHTML = "<strong>Estás viendo: " + titulo + "</strong>";
+    });
+
+    // Restaura la descripción original al retirar el mouse.
+    tarjeta.addEventListener("mouseout", function () {
+      descripcion.innerHTML = textoOriginal;
     });
   });
 }
