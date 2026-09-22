@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "titulo": "Diablo IV",
+        "genero": "RPG de acción",
+        "precio": 39990,
+        "descripcion": "Explora el oscuro mundo de Santuario y enfréntate a poderosos enemigos.",
+        "imagen": "assets/img/diablo4.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Helldivers 2",
+        "genero": "Acción cooperativa",
+        "precio": 29990,
+        "descripcion": "Únete a otros jugadores y lucha por defender la Supertierra.",
+        "imagen": "assets/img/helldivers2.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Hollow Knight: Silksong",
+        "genero": "Metroidvania",
+        "precio": 24990,
+        "descripcion": "Explora un nuevo reino lleno de enemigos, secretos y desafíos.",
+        "imagen": "assets/img/silksong.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Hades",
+        "genero": "Roguelike",
+        "precio": 15990,
+        "descripcion": "Escapa del inframundo utilizando distintas armas y poderes de los dioses.",
+        "imagen": "assets/img/hades.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Cyberpunk 2077",
+        "genero": "RPG",
+        "precio": 34990,
+        "descripcion": "Descubre Night City en una aventura futurista llena de decisiones.",
+        "imagen": "assets/img/cyberpunk2077.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "Minecraft",
+        "genero": "Aventura y construcción",
+        "precio": 26990,
+        "descripcion": "Explora, construye y crea mundos utilizando bloques y tu imaginación.",
+        "imagen": "assets/img/minecraft.jpg"
+    }
+]
