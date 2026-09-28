@@ -256,13 +256,13 @@ La aplicación incluye una sección de contacto integrada con el diseño general
 
 ## Repositorio
 
-Repositorio GitHub:
+El código fuente del proyecto se encuentra disponible en GitHub:
 
-`PENDIENTE`
+https://github.com/Johanromanque/Desarrollo_Frontend_I
 
-Aplicación publicada con GitHub Pages:
+La aplicación se encuentra desplegada mediante GitHub Pages:
 
-`PENDIENTE`
+https://johanromanque.github.io/Desarrollo_Frontend_I/7%20Actividad%20Formativa/
 
 ---
 
