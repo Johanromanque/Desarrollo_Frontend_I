@@ -166,7 +166,7 @@ El Hook `useEffect` se utiliza para cargar dinámicamente el catálogo de videoj
 La aplicación realiza una solicitud mediante `fetch()` a la API REST:
 
 ```javascript
-fetch("http://localhost:3000/api/productos")
+fetch("http://localhost:3000/api/productos");
 ```
 
 Los datos recibidos en formato JSON son almacenados en el estado mediante `setJuegos()`.
@@ -448,7 +448,7 @@ https://github.com/Johanromanque/Desarrollo_Frontend_I
 
 La aplicación será desplegada mediante GitHub Pages:
 
-PENDIENTE_ACTUALIZAR_GITHUB_PAGES
+[PENDIENTE_ACTUALIZAR_GITHUB_PAGES](https://johanromanque.github.io/Desarrollo_Frontend_I/8.%20Actividad%20Sumativa/)
 
 ---
 
