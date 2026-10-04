@@ -440,6 +440,12 @@ La interfaz se adapta a dispositivos con pantallas de menor tamaño.
 
 ---
 
+## Publicación en GitHub Pages
+
+La aplicación se encuentra publicada y funcionando correctamente mediante GitHub Pages.
+
+![GitHub Pages](evidencias/11_github_pages.png)
+
 ## Repositorio
 
 El código fuente del proyecto se encuentra disponible en GitHub:
