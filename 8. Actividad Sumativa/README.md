@@ -454,7 +454,7 @@ https://github.com/Johanromanque/Desarrollo_Frontend_I
 
 La aplicación será desplegada mediante GitHub Pages:
 
-[PENDIENTE_ACTUALIZAR_GITHUB_PAGES](https://johanromanque.github.io/Desarrollo_Frontend_I/8.%20Actividad%20Sumativa/)
+https://johanromanque.github.io/Desarrollo_Frontend_I/8.%20Actividad%20Sumativa/
 
 ---
 
